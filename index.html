@@ -1,0 +1,87 @@
+<!-- Hello, geniuses. Read everything  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        /* this is the one way to write CSS */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke; /* Light gray background on whole page */
+            color: black; /* change text color here */
+        }
+        header {
+            /* Dark gray header with white text */
+
+            /* HINT: You can change these but make sure
+            the text is readable by making one color bright
+            and one color dark */
+
+            background-color: darkslategrey; /*try typing different colors: red, pink, dark...*/
+            color: white; 
+            padding: 10px 0;
+            text-align: center;
+        }
+        #skills {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            background: #333333; /* This is a hex color */
+            /* Here are some cool colors you could try. https://simple.wikipedia.org/wiki/List_of_colors
+            Copy the number from the column that says HTML (HEX) Code here */
+            color: #ffffff; 
+            margin: 5px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Header -->
+    <header id="main-header">
+        <!-- Replace the Hidden Genius Project logo with your own -->
+        <!-- This is another way to write style ⤵ -->
+        <img src="HGPLogo.jpg" alt="Your Logo" style="height: 200px; width: auto;">
+        <h1>Your Portfolio</h1>
+    </header>
+
+    <div class="spacer" style="height: 20px;"></div>
+
+    <div class="container" style="width:80%; margin: auto; overflow: hidden;">
+        <!-- Self Image -->
+        <section id="self-image">
+            <!-- Add your self image here -->
+            <!-- HINT: Drag and drop it into VS Code on the left, then change "example.jpeg" to the image name-->
+            <!-- HINT: You can change the width in the next line ⤵ to make the image bigger or smaller -->
+            <img src="example.jpeg" alt="Your Name" style="width:300px;height:auto;">
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" style="margin: 20px 0">
+            <h2 style=>About Me</h2>
+            <!-- Add your bio here -->
+            <p>Write a short bio about yourself here. 
+                <b>You can do bold text like this,</b> 
+                <u>underlined text like this,</u> 
+                or 
+                <i>italicized text like this.</i>
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+            <h2>My Skills</h2>
+            <!-- List your skills here -->
+            <ul id="skills">
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <!-- To make another skill, follow the same format as above -->
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
