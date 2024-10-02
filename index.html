@@ -1,87 +1,126 @@
-<!-- Hello, geniuses. Read everything  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Marti's Wear</title>
     <style>
-        /* this is the one way to write style/CSS */
+        /* Basic styling */
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background-color: whitesmoke; /* Light gray background on whole page */
-            color: black; /* change text color here */
+            background-color: rgb(0, 0, 0);
+            color: rgb(174, 165, 165);
         }
+
+        /* Styling for the header and video background */
         header {
-            /* Dark gray header with white text */
-
-            /* HINT: You can change these but make sure
-            the text is readable by making one color bright
-            and one color dark */
-
-            background-color: darkslategrey; /*try typing different colors: red, pink, dark...*/
-            color: white; 
-            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            color: white;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
+
+        /* Styling the video */
+        #header-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Styling the content (text and logo) on top of the video */
+        #main-header-content {
+            position: relative;
+            z-index: 1;
+        }
+
         #skills {
             list-style: none;
             padding: 0;
         }
+
         #skills li {
-            background: #333333; /* This is a hex color */
-            /* Here are some cool colors you could try. https://simple.wikipedia.org/wiki/List_of_colors
-            Copy the number from the column that says HTML (HEX) Code here */
-            color: #ffffff; 
+            background: #545353;
+            color: #ffffff;
             margin: 5px 0;
             padding: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Page Header -->
+    <!-- Page Header with Video Background -->
     <header id="main-header">
-        <!-- Replace the Hidden Genius Project logo with your own -->
-        <!-- This is another way to write style/CSS ⤵ -->
-        <img src="HGPLogo.jpg" alt="Your Logo" style="height: 200px; width: auto;">
-        <h1>Your Portfolio</h1>
+        <!-- Background Video -->
+        <video autoplay muted loop id="header-video">
+            <source src="your-video-mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content on top of the video -->
+        <div id="main-header-content">
+            <img src="MartiWear.jpg" alt="Your Logo" style="height: 200px; width: auto;">
+            <h1></h1>
+        </div>
     </header>
 
     <div class="spacer" style="height: 20px;"></div>
 
-    <div class="container" style="width:80%; margin: auto; overflow: hidden;">
-        <!-- Self Image -->
-        <section id="self-image">
-            <!-- Add your self image here -->
-            <!-- HINT: Drag and drop it into VS Code on the left, then change "example.jpeg" to the image name-->
-            <!-- HINT: You can change the width in the next line ⤵ to make the image bigger or smaller -->
-            <img src="example.jpeg" alt="Your Name" style="width:300px;height:auto;">
-        </section>
+    <!-- Bio Section -->
+    <section id="bio" style="margin: 20px auto; max-width: 600px;">
+        <h2>About Me</h2>
+        <p>Hi, my name is <b><i>Kamani Sapara.</i></b> I am 16 and I play football for Richards High School in Oaklawn. 
+            I like playing video games and playing music.
+        </p>
+        <p>
+            <a href="https://www.hudl.com/profile/20843394/kamani-sapara" target="_blank" style="color: rgb(233, 35, 35); text-decoration: none;">
+               <u>Click Here to View My Highlights! </u> 
+            </a>
+        </p>
+        <p>At <u> Marti's Wear,</u> our mission is to offer trendy and quality clothes that help people show who they are. We focus on being eco-friendly, creative, and giving great service, making sure every item brings happiness and confidence to our customers. </p>
+    </section>
 
-        <!-- Bio Section -->
-        <section id="bio" style="margin: 20px 0">
-            <h2 style=>About Me</h2>
-            <!-- Add your bio here -->
-            <p>Write a short bio about yourself here. 
-                <b>You can do bold text like this,</b> 
-                <u>underlined text like this,</u> 
-                or 
-                <i>italicized text like this.</i>
-            </p>
-        </section>
+    <div class="spacer" style="height: 20px;"></div>
 
-        <!-- Skills Section -->
-        <section id="skills-section">
-            <h2>My Skills</h2>
-            <!-- List your skills here -->
-            <ul id="skills">
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <!-- To make another skill, follow the same format as above -->
-            </ul>
+    <div class="container" style="width:1300px; margin: auto; overflow: hidden;">
+        <section id="image">
+            <!-- Wrap each image inside an anchor tag -->
+            <a href="https://www.hiddengeniusproject.org" target="_blank">
+                <img src="pic1.jpg" alt="Image 1" style="width:300px; height:300px; float:left; margin-right: 10px;">
+            </a>
+            
+            <a href="https://www.hiddengeniusproject.org" target="_blank">
+                <img src="pic2.jpg" alt="Image 2" style="width:300px; height:300px; float:left; margin-right: 10px;">
+            </a>
+            
+            <a href="https://www.hiddengeniusproject.org" target="_blank">
+                <img src="pic3.jpg" alt="Image 3" style="width:300px; height:300px; float:left; margin-right: 10px;">
+            </a>
+            
+            <a href="https://www.hiddengeniusproject.org" target="_blank">
+                <img src="pic4.jpg" alt="Image 4" style="width:300px; height:300px; float:left; margin-right: 10px;">
+            </a>
         </section>
     </div>
+    
+    <!-- Skills Section -->
+    <section id="skills-section">
+        <h2>My Skills</h2>
+        <ul id="skills">
+            <li>Lifting</li>
+            <li>Helping Others</li>
+            <li>Working Hard</li>
+        </ul>
+    </section>
 </body>
 </html>
